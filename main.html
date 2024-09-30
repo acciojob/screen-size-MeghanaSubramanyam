@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Size Info</title>
     <style>
-      /*  your css code here. If applicable */
       body {
         font-family: Arial, sans-serif;
         display: flex;
@@ -23,13 +24,12 @@
       }
     </style>
   </head>
-
   <body>
-    <!-- the entire body must be written by student -->
+    <!-- Container to display the window size -->
     <div id="sizeInfo"></div>
 
     <script>
-      //your JS code here. If required.
+      // Function to update and display the window size
       function updateWindowSize() {
         const sizeInfoDiv = document.getElementById("sizeInfo");
         const width = window.innerWidth;
@@ -41,8 +41,9 @@
       // Initial call to display the size when the page is first loaded
       updateWindowSize();
 
-      // Update the size when the window is resized
+      // Update the size whenever the window is resized
       window.addEventListener("resize", updateWindowSize);
     </script>
   </body>
 </html>
+
